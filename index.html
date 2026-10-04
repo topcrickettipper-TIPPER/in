@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sunil Bhatia™ 👑</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background:
+        radial-gradient(circle at top, #8b238e 0%, #57156f 35%, #111b4d 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+}
+
+.card {
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 35px;
+    padding: 55px 35px 35px;
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    text-align: center;
+}
+
+/* NAME */
+.title {
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    letter-spacing: -0.5px;
+}
+
+/* BADGE */
+.badge {
+    display: inline-block;
+    border: 2px solid #e66cff;
+    border-radius: 30px;
+    padding: 10px 27px;
+    color: #ed7cff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 45px;
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-bottom: 40px;
+}
+
+.stat-number {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.stat-label {
+    margin-top: 8px;
+    color: rgba(255,255,255,0.55);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* LINE */
+.line {
+    height: 1px;
+    background: rgba(255,255,255,0.22);
+    margin-bottom: 35px;
+}
+
+/* FEATURES */
+.features {
+    text-align: left;
+    margin-bottom: 35px;
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin: 24px 0;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.icon {
+    width: 25px;
+    min-width: 25px;
+    height: 25px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+/* TELEGRAM BUTTON */
+.join-btn {
+    width: 100%;
+    border: none;
+    border-radius: 18px;
+    padding: 22px 20px;
+    background: linear-gradient(90deg, #bd1bc4, #386be8);
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+
+    /* BLINK / PULSE */
+    animation: pulse 1.2s infinite;
+}
+
+.join-btn:hover {
+    transform: scale(1.03);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 8px rgba(255,255,255,0.25);
+    }
+
+    50% {
+        transform: scale(1.045);
+        box-shadow:
+            0 0 20px rgba(230,80,255,0.75),
+            0 0 45px rgba(80,120,255,0.45);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 8px rgba(255,255,255,0.25);
+    }
+}
+
+/* COUNTDOWN */
+.countdown {
+    margin-top: 28px;
+    color: rgba(255,255,255,0.58);
+    font-size: 17px;
+}
+
+#timer {
+    color: #f06cff;
+    font-weight: 800;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 45px;
+    color: rgba(255,255,255,0.38);
+    font-size: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 500px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    .card {
+        padding: 48px 25px 30px;
+        border-radius: 30px;
+    }
+
+    .title {
+        font-size: 29px;
+    }
+
+    .stats {
+        gap: 55px;
+    }
+
+    .stat-number {
+        font-size: 27px;
+    }
+
+    .feature {
+        font-size: 16px;
+    }
+
+    .join-btn {
+        font-size: 16px;
+        padding: 21px 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="title">
+            Sunil Bhatia™ 👑
+        </div>
+
+        <div class="badge">
+            OFFICIAL CHANNEL
+        </div>
+
+        <div class="stats">
+
+            <div>
+                <div class="stat-number">99%</div>
+                <div class="stat-label">ACCURACY</div>
+            </div>
+
+            <div>
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">SUPPORT</div>
+            </div>
+
+        </div>
+
+        <div class="line"></div>
+
+        <div class="features">
+
+            <div class="feature">
+                <div class="icon">✓</div>
+                <div>Daily free predictions &amp; analysis</div>
+            </div>
+
+            <div class="feature">
+                <div class="icon">↗</div>
+                <div>High accuracy session reports</div>
+            </div>
+
+            <div class="feature">
+                <div class="icon">◆</div>
+                <div>Sunil Bhatia™ — Your trusted sports expert 😎</div>
+            </div>
+
+        </div>
+
+        <!-- TELEGRAM BUTTON -->
+        <a
+            class="join-btn"
+            href="https://t.me/+NE-Ny3wwlQU1ZTNl"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            ✈️ &nbsp; JOIN TELEGRAM NOW
+        </a>
+
+        <div class="countdown">
+            Redirecting in <span id="timer">15</span> seconds...
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © 2026 Sunil Bhatia™. All Rights Reserved.
+    </div>
+
+</div>
+
+<script>
+
+let seconds = 15;
+
+const timer = document.getElementById("timer");
+
+const countdown = setInterval(function() {
+
+    seconds--;
+
+    timer.textContent = seconds < 10
+        ? "0" + seconds
+        : seconds;
+
+    if (seconds <= 0) {
+        clearInterval(countdown);
+
+        // Automatic redirect
+        window.location.href =
+            "https://t.me/+NE-Ny3wwlQU1ZTNl";
+    }
+
+}, 1000);
+
+</script>
+
+</body>
+</html>
