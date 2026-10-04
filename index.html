@@ -7,33 +7,46 @@
 <title>Sunil Bhatia™ 👑</title>
 
 <style>
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    min-height: 100%;
+}
+
 body {
     min-height: 100vh;
+    padding: 8px 8px 15px;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
     background:
-        radial-gradient(circle at top, #8b238e 0%, #57156f 35%, #111b4d 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px 15px;
+        radial-gradient(
+            circle at top,
+            #8b238e 0%,
+            #57156f 35%,
+            #111b4d 100%
+        );
 }
+
+/* MAIN CONTAINER */
 
 .container {
     width: 100%;
     max-width: 650px;
+    margin: 0 auto;
 }
 
+/* CARD */
+
 .card {
+    width: 100%;
     border: 1px solid rgba(255,255,255,0.18);
-    border-radius: 35px;
-    padding: 55px 35px 35px;
+    border-radius: 28px;
+    padding: 30px 20px 25px;
     background: rgba(255,255,255,0.06);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
@@ -42,91 +55,105 @@ body {
 }
 
 /* NAME */
+
 .title {
-    font-size: 34px;
+    font-size: 24px;
     font-weight: 800;
-    margin-bottom: 25px;
-    letter-spacing: -0.5px;
+    margin-bottom: 18px;
+    letter-spacing: -0.3px;
 }
 
-/* BADGE */
+/* OFFICIAL CHANNEL */
+
 .badge {
     display: inline-block;
     border: 2px solid #e66cff;
     border-radius: 30px;
-    padding: 10px 27px;
+    padding: 7px 18px;
     color: #ed7cff;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 45px;
+    letter-spacing: 1.5px;
+    margin-bottom: 27px;
 }
 
 /* STATS */
+
 .stats {
     display: flex;
     justify-content: center;
-    gap: 90px;
-    margin-bottom: 40px;
+    gap: 60px;
+    margin-bottom: 27px;
 }
 
 .stat-number {
-    font-size: 30px;
+    font-size: 23px;
     font-weight: 800;
 }
 
 .stat-label {
-    margin-top: 8px;
+    margin-top: 5px;
     color: rgba(255,255,255,0.55);
-    font-size: 12px;
-    letter-spacing: 2px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
 }
 
 /* LINE */
+
 .line {
     height: 1px;
-    background: rgba(255,255,255,0.22);
-    margin-bottom: 35px;
+    background: rgba(255,255,255,0.20);
+    margin-bottom: 28px;
 }
 
 /* FEATURES */
+
 .features {
     text-align: left;
-    margin-bottom: 35px;
+    margin-bottom: 28px;
 }
 
 .feature {
     display: flex;
     align-items: flex-start;
-    gap: 18px;
-    margin: 24px 0;
-    font-size: 17px;
-    line-height: 1.5;
+    gap: 13px;
+    margin: 17px 0;
+    font-size: 13px;
+    line-height: 1.45;
 }
 
 .icon {
-    width: 25px;
-    min-width: 25px;
-    height: 25px;
+    width: 21px;
+    min-width: 21px;
+    height: 21px;
     border: 2px solid white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 13px;
+    font-size: 10px;
+    margin-top: 1px;
 }
 
 /* TELEGRAM BUTTON */
+
 .join-btn {
     width: 100%;
     border: none;
-    border-radius: 18px;
-    padding: 22px 20px;
-    background: linear-gradient(90deg, #bd1bc4, #386be8);
+    border-radius: 15px;
+    padding: 17px 12px;
+
+    background: linear-gradient(
+        90deg,
+        #bd1bc4,
+        #386be8
+    );
+
     color: white;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 800;
-    letter-spacing: 1px;
+    letter-spacing: .7px;
+
     cursor: pointer;
     text-decoration: none;
     display: block;
@@ -135,34 +162,36 @@ body {
     animation: pulse 1.2s infinite;
 }
 
-.join-btn:hover {
-    transform: scale(1.03);
-}
+/* BUTTON ANIMATION */
 
 @keyframes pulse {
+
     0% {
         transform: scale(1);
-        box-shadow: 0 0 8px rgba(255,255,255,0.25);
+        box-shadow:
+            0 0 8px rgba(255,255,255,0.20);
     }
 
     50% {
         transform: scale(1.045);
         box-shadow:
-            0 0 20px rgba(230,80,255,0.75),
-            0 0 45px rgba(80,120,255,0.45);
+            0 0 20px rgba(230,80,255,0.80),
+            0 0 45px rgba(80,120,255,0.50);
     }
 
     100% {
         transform: scale(1);
-        box-shadow: 0 0 8px rgba(255,255,255,0.25);
+        box-shadow:
+            0 0 8px rgba(255,255,255,0.20);
     }
 }
 
 /* COUNTDOWN */
+
 .countdown {
-    margin-top: 28px;
+    margin-top: 20px;
     color: rgba(255,255,255,0.58);
-    font-size: 17px;
+    font-size: 13px;
 }
 
 #timer {
@@ -171,47 +200,76 @@ body {
 }
 
 /* FOOTER */
+
 .footer {
-    margin-top: 45px;
+    text-align: center;
+    margin-top: 25px;
     color: rgba(255,255,255,0.38);
-    font-size: 14px;
+    font-size: 11px;
 }
 
-/* MOBILE */
+
+/* =================================
+   MOBILE
+================================= */
+
 @media (max-width: 500px) {
 
     body {
-        padding: 15px 10px;
+        padding: 6px 7px 12px;
     }
 
     .card {
-        padding: 48px 25px 30px;
-        border-radius: 30px;
+        padding: 28px 19px 24px;
+        border-radius: 25px;
     }
 
     .title {
-        font-size: 29px;
+        font-size: 23px;
+        margin-bottom: 17px;
+    }
+
+    .badge {
+        font-size: 10px;
+        padding: 7px 17px;
+        margin-bottom: 25px;
     }
 
     .stats {
-        gap: 55px;
+        gap: 50px;
+        margin-bottom: 25px;
     }
 
     .stat-number {
-        font-size: 27px;
+        font-size: 22px;
+    }
+
+    .stat-label {
+        font-size: 9px;
     }
 
     .feature {
-        font-size: 16px;
+        font-size: 13px;
+        margin: 16px 0;
     }
 
     .join-btn {
-        font-size: 16px;
-        padding: 21px 15px;
+        font-size: 14px;
+        padding: 16px 12px;
+    }
+
+    .countdown {
+        font-size: 13px;
+    }
+
+    .footer {
+        font-size: 10px;
     }
 }
+
 </style>
 </head>
+
 
 <body>
 
@@ -219,70 +277,135 @@ body {
 
     <div class="card">
 
+        <!-- NAME -->
+
         <div class="title">
             Sunil Bhatia™ 👑
         </div>
+
+
+        <!-- BADGE -->
 
         <div class="badge">
             OFFICIAL CHANNEL
         </div>
 
+
+        <!-- STATS -->
+
         <div class="stats">
 
             <div>
-                <div class="stat-number">99%</div>
-                <div class="stat-label">ACCURACY</div>
+                <div class="stat-number">
+                    99%
+                </div>
+
+                <div class="stat-label">
+                    ACCURACY
+                </div>
             </div>
 
+
             <div>
-                <div class="stat-number">24/7</div>
-                <div class="stat-label">SUPPORT</div>
+                <div class="stat-number">
+                    24/7
+                </div>
+
+                <div class="stat-label">
+                    SUPPORT
+                </div>
             </div>
 
         </div>
 
+
+        <!-- LINE -->
+
         <div class="line"></div>
+
+
+        <!-- FEATURES -->
 
         <div class="features">
 
             <div class="feature">
-                <div class="icon">✓</div>
-                <div>Daily free predictions &amp; analysis</div>
+
+                <div class="icon">
+                    ✓
+                </div>
+
+                <div>
+                    Daily free predictions &amp; analysis
+                </div>
+
             </div>
 
-            <div class="feature">
-                <div class="icon">↗</div>
-                <div>High accuracy session reports</div>
-            </div>
 
             <div class="feature">
-                <div class="icon">◆</div>
-                <div>Sunil Bhatia™ — Your trusted sports expert 😎</div>
+
+                <div class="icon">
+                    ↗
+                </div>
+
+                <div>
+                    High accuracy session reports
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="icon">
+                    ◆
+                </div>
+
+                <div>
+                    Sunil Bhatia™ — Your trusted sports expert 😎
+                </div>
+
             </div>
 
         </div>
 
+
         <!-- TELEGRAM BUTTON -->
+
         <a
             class="join-btn"
             href="https://t.me/+NE-Ny3wwlQU1ZTNl"
             target="_blank"
             rel="noopener noreferrer"
         >
+
             ✈️ &nbsp; JOIN TELEGRAM NOW
+
         </a>
 
+
+        <!-- COUNTDOWN -->
+
         <div class="countdown">
-            Redirecting in <span id="timer">15</span> seconds...
+
+            Redirecting in
+            <span id="timer">15</span>
+            seconds...
+
         </div>
 
     </div>
 
+
+    <!-- FOOTER -->
+
     <div class="footer">
+
         © 2026 Sunil Bhatia™. All Rights Reserved.
+
     </div>
 
 </div>
+
 
 <script>
 
@@ -290,20 +413,23 @@ let seconds = 15;
 
 const timer = document.getElementById("timer");
 
-const countdown = setInterval(function() {
+const countdown = setInterval(function () {
 
     seconds--;
 
-    timer.textContent = seconds < 10
-        ? "0" + seconds
-        : seconds;
+    if (seconds < 10) {
+        timer.textContent = "0" + seconds;
+    } else {
+        timer.textContent = seconds;
+    }
 
     if (seconds <= 0) {
+
         clearInterval(countdown);
 
-        // Automatic redirect
         window.location.href =
             "https://t.me/+NE-Ny3wwlQU1ZTNl";
+
     }
 
 }, 1000);
